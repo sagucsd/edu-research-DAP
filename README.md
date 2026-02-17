@@ -8,7 +8,7 @@ This guide measures the impact of four digital citizenship lessons within Campus
 This tutorial serves as an introduction to performing t-tests to compare two groups in R. You will need the `readr`, `psych`, and `ggplot2` packages.
 
 # 1. Evaluating Learning Changes with Paired-sample t-tests 
-In order to determine whether participants (n = 8) made significant learning gains, this study used a t-test to determine whether differences between the pre- and posttests were significant. Specifically, when using the paired-sample t-test the researcher calculates the mean percentages of responses on the pretest and posttest. The t-test calculates the difference between these means, and determines whether this difference is significant.  A significant difference implies effective curriculum, while a less-than-significant difference indicates that the participants did not experience a significant change in learning, which may be attributed to a variety of factors. 
+In order to determine whether participants (n = 8) made significant learning gains, this study used a t-test to determine whether differences between the pre- and posttests were significant. Specifically, when using the paired-sample t-test the researcher calculates the mean percentages of responses on the pretest and posttest. A significant difference implies effective curriculum, while a less-than-significant difference indicates that the participants did not experience a significant change in learning, which may be attributed to a variety of factors. 
 
 ```
 library(readr) # find, import, and read data
