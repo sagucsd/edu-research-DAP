@@ -12,6 +12,6 @@ In order to determine whether youth participants made significant learning gains
 
 ```
 library(readr) # find, import, and read data
-library(psych) H descriptive statistics
+library(psych) # descriptive statistics
 library(ggplot2) # plotting
 ```
