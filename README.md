@@ -5,7 +5,7 @@ Educational research often uses pre- and posttest design to measure how well a n
 
 This guide uses pre- and posttests to measure the impact of four digital citizenship lessons within Campus Connections, a 12-week mentoring program that paired youth (ages 12–14) with undergraduate student mentors. The digital citizenship lessons included: (1) digital wellness, (2) digital accessibility, (3) securing devices, and (4) digital footprint. In addition to knowledge-based surveys, students also completed the Developmental Assets Profile (DAP) regarding their academic, social, emotional, and psychological wellness. The DAP was completed before the start of programming and again at the end.  
 
-This tutorial serves as an introduction to performing t-tests to compare two groups in R. You will need the `ggplot2` package
+This tutorial serves as an introduction to performing t-tests to compare two groups in R. You will need the `readr`, `psych`, and `ggplot2` packages.
 
 # 1. Evaluating Learning Changes with Paired-sample t-tests 
 In order to determine whether youth participants made significant learning gains during digital citizenship lessons, this study utilized social statistics with a pretest–posttest design. Participants (n = 8) completed a pretest prior to beginning each of the four lessons and a posttest at completion of each lesson. 
