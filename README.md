@@ -8,4 +8,7 @@ This guide uses pre- and posttests to measure the impact of four digital citizen
 This tutorial serves as an introduction to performing t-tests to compare two groups in R. You will need the `readr`, `psych`, and `ggplot2` packages.
 
 # 1. Evaluating Learning Changes with Paired-sample t-tests 
-In order to determine whether youth participants made significant learning gains during digital citizenship lessons, this study utilized social statistics with a pretest–posttest design. Participants (n = 8) completed a pretest prior to beginning each of the four lessons and a posttest at completion of each lesson. 
+In order to determine whether youth participants made significant learning gains during digital citizenship lessons, this study utilized social statistics with a pretest–posttest design. Participants (n = 8) completed a pretest prior to beginning each of the four lessons and a posttest at completion of each lesson.  
+
+```library (readr)
+library(ggplot2)```
