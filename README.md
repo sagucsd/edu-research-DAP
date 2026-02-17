@@ -52,4 +52,4 @@ ggplot(df_long, aes(x = time, y = value, fill = time)) +
   scale_fill_manual(values = c("#E60023", "#45A3FE")) +
   theme_minimal()  
 ```
-In this dot plot, we can see that the postDAP scores show less variation than preDAP scores. While most participants improved, participants **Y000084** and **43** saw decreases. We must then ponder why participant Y000059 might have such a high preDAP score that is not reflected in their postDAP score.
+In this dot plot, we can see that the postDAP scores show less variation than preDAP scores. While most participants improved, participants **Y000084** and **Y000043** saw decreases. Notably, a high-scoring outlier in the pre-DAP data (**Y000059**) disappeared in the post-test. We must then ponder why participant Y000059 might have such a high preDAP score that is not reflected in their postDAP score.
