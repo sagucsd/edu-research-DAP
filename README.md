@@ -11,6 +11,7 @@ This tutorial serves as an introduction to performing t-tests to compare two gro
 In order to determine whether youth participants made significant learning gains during digital citizenship lessons, this study utilized social statistics with a pretest–posttest design. Participants (n = 8) completed a pretest prior to beginning each of the four lessons and a posttest at completion of each lesson.  
 
 ```
-library (readr)
-library(ggplot2)
+library(readr) # find, import, and read data
+library(psych) H descriptive statistics
+library(ggplot2) # plotting
 ```
