@@ -1,5 +1,5 @@
 # edu-research-DAP
-Examining pre and posttest design 
+Paired-samples t-tests in R
 # Introduction 
 Educational research often uses pre- and posttest design to measure how well a new curriculum meets specific learning goals. By testing participants before and after instruction, researchers can determine how much knowledge was gained and evaluate both the efficacy of curriculum and instructional practices. This design is considered one of the best ways to assess the overall impact and quality of a curriculum.
 
