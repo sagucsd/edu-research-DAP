@@ -14,6 +14,7 @@ In order to determine whether youth participants made significant learning gains
 library(readr) # find, import, and read data
 library(psych) # descriptive statistics
 library(ggplot2) # plotting
+library(ggrepel)
 
 DigitalCitizenship <- read_csv("DigitalCitizenship.csv")
 View(DigitalCitizenship)
@@ -27,4 +28,27 @@ min(DigitalCitizenship$postDAP)
 max(DigitalCitizenship$postDAP)
 mean(DigitalCitizenship$postDAP)
 describe(DigitalCitizenship$postDAP)
+
+df_long <- data.frame(
+  ID = rep(DigitalCitizenship$ID, 2),
+  value = c(DigitalCitizenship$preDAP, DigitalCitizenship$postDAP),
+  time = rep(c("PreDAP", "PostDAP"), each = nrow(DigitalCitizenship))
+)
+df_long$time <- factor(df_long$time, levels = c("PreDAP", "PostDAP"))
+ggplot(df_long, aes(x = time, y = value, fill = time)) +
+  geom_dotplot(binaxis = 'y', stackdir = 'center', dotsize = 1.2) + 
+  #This magic layer fixes the overlapping and disappearing label issues
+  geom_text_repel(aes(label = ID), 
+            max.overlaps = Inf, #Forces all labels to appear
+            box.padding = 0.5, #Adds space around the text
+            point.padding = 0.5, #Keeps text from touching the dots
+            size = 3 
+            )+
+  labs(
+    title = "PreDAP vs PostDAP Scores",
+    x = NULL,
+    y = "DAP Score"
+  ) +
+  scale_fill_manual(values = c("#E60023", "#45A3FE")) +
+  theme_minimal()  
 ```
