@@ -14,4 +14,17 @@ In order to determine whether youth participants made significant learning gains
 library(readr) # find, import, and read data
 library(psych) # descriptive statistics
 library(ggplot2) # plotting
+
+DigitalCitizenship <- read_csv("DigitalCitizenship.csv")
+View(DigitalCitizenship)
+
+min(DigitalCitizenship$preDAP)
+max(DigitalCitizenship$preDAP)
+mean(DigitalCitizenship$preDAP)
+describe(DigitalCitizenship$preDAP) 
+
+min(DigitalCitizenship$postDAP)
+max(DigitalCitizenship$postDAP)
+mean(DigitalCitizenship$postDAP)
+describe(DigitalCitizenship$postDAP)
 ```
