@@ -14,7 +14,7 @@ In order to determine whether youth participants made significant learning gains
 library(readr) # find, import, and read data
 library(psych) # descriptive statistics
 library(ggplot2) # plotting
-library(ggrepel) #repel overlapping plot labels
+library(ggrepel) # repel overlapping plot labels
 
 DigitalCitizenship <- read_csv("DigitalCitizenship.csv")
 View(DigitalCitizenship)
@@ -37,7 +37,6 @@ df_long <- data.frame(
 df_long$time <- factor(df_long$time, levels = c("PreDAP", "PostDAP"))
 ggplot(df_long, aes(x = time, y = value, fill = time)) +
   geom_dotplot(binaxis = 'y', stackdir = 'center', dotsize = 1.2) + 
-  #This magic layer fixes the overlapping and disappearing label issues
   geom_text_repel(aes(label = ID), 
             max.overlaps = Inf, 
             box.padding = 0.5, 
