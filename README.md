@@ -54,6 +54,6 @@ ggplot(df_long, aes(x = time, y = value, fill = time)) +
 In this dot plot, we can see that the postDAP scores show less variation than preDAP scores. While most participants improved, participants **Y000084** and **Y000043** saw decreases. Notably, a high-scoring outlier in the pre-DAP data (**Y000059**) disappeared in the post-test. ![A dot plot showing pre and postDAP scores](https://github.com/user-attachments/assets/75c63f27-3e0d-489a-b935-cea256356c23)
 
 
-Why did participant Y000059 have such a high preDAP score that is not reflected in their postDAP score? Is there a problem with the scale or the survey procedure? Is there response bias? Were there specific circumstances that impacted these participants as they took the surveys?**With small datasets, outliers are more obvious and significant and make a greater difference in how we analyze and interpret the data.**
+Why did participant Y000059 have such a high preDAP score that is not reflected in their postDAP score? Is there a problem with the scale or the survey procedure? Is there response bias? Were there specific circumstances that impacted these participants as they took the surveys? **With small datasets, outliers are more obvious and significant and make a greater difference in how we analyze and interpret the data.**
 
 
